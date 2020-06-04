@@ -310,14 +310,17 @@ void SSL_get0_alpn_selected(const SSL* ssl, const unsigned char** protocol, unsi
     REQUIRED_FUNCTION(ERR_reason_error_string) \
     REQUIRED_FUNCTION(EVP_aes_128_cbc) \
     REQUIRED_FUNCTION(EVP_aes_128_ccm) \
+    REQUIRED_FUNCTION(EVP_aes_128_cfb128) \
     REQUIRED_FUNCTION(EVP_aes_128_ecb) \
     REQUIRED_FUNCTION(EVP_aes_128_gcm) \
     REQUIRED_FUNCTION(EVP_aes_192_cbc) \
     REQUIRED_FUNCTION(EVP_aes_192_ccm) \
+    REQUIRED_FUNCTION(EVP_aes_192_cfb128) \
     REQUIRED_FUNCTION(EVP_aes_192_ecb) \
     REQUIRED_FUNCTION(EVP_aes_192_gcm) \
     REQUIRED_FUNCTION(EVP_aes_256_cbc) \
     REQUIRED_FUNCTION(EVP_aes_256_ccm) \
+    REQUIRED_FUNCTION(EVP_aes_256_cfb128) \
     REQUIRED_FUNCTION(EVP_aes_256_ecb) \
     REQUIRED_FUNCTION(EVP_aes_256_gcm) \
     LEGACY_FUNCTION(EVP_CIPHER_CTX_cleanup) \
@@ -699,14 +702,17 @@ FOR_ALL_OPENSSL_FUNCTIONS
 #define ERR_put_error ERR_put_error_ptr
 #define ERR_reason_error_string ERR_reason_error_string_ptr
 #define EVP_aes_128_cbc EVP_aes_128_cbc_ptr
+#define EVP_aes_128_cfb128 EVP_aes_128_cfb128_ptr
 #define EVP_aes_128_ecb EVP_aes_128_ecb_ptr
 #define EVP_aes_128_gcm EVP_aes_128_gcm_ptr
 #define EVP_aes_128_ccm EVP_aes_128_ccm_ptr
 #define EVP_aes_192_cbc EVP_aes_192_cbc_ptr
+#define EVP_aes_192_cfb128 EVP_aes_192_cfb128_ptr
 #define EVP_aes_192_ecb EVP_aes_192_ecb_ptr
 #define EVP_aes_192_gcm EVP_aes_192_gcm_ptr
 #define EVP_aes_192_ccm EVP_aes_192_ccm_ptr
 #define EVP_aes_256_cbc EVP_aes_256_cbc_ptr
+#define EVP_aes_256_cfb128 EVP_aes_256_cfb128_ptr
 #define EVP_aes_256_ecb EVP_aes_256_ecb_ptr
 #define EVP_aes_256_gcm EVP_aes_256_gcm_ptr
 #define EVP_aes_256_ccm EVP_aes_256_ccm_ptr

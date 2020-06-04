@@ -196,6 +196,11 @@ const EVP_CIPHER* CryptoNative_EvpAes128Gcm()
     return EVP_aes_128_gcm();
 }
 
+const EVP_CIPHER* CryptoNative_EvpAes128Cfb128()
+{
+    return EVP_aes_128_cfb128();
+}
+
 const EVP_CIPHER* CryptoNative_EvpAes128Ccm()
 {
     return EVP_aes_128_ccm();
@@ -204,6 +209,11 @@ const EVP_CIPHER* CryptoNative_EvpAes128Ccm()
 const EVP_CIPHER* CryptoNative_EvpAes192Ecb()
 {
     return EVP_aes_192_ecb();
+}
+
+const EVP_CIPHER* CryptoNative_EvpAes192Cfb128()
+{
+    return EVP_aes_192_cfb128();
 }
 
 const EVP_CIPHER* CryptoNative_EvpAes192Cbc()
@@ -224,6 +234,11 @@ const EVP_CIPHER* CryptoNative_EvpAes192Ccm()
 const EVP_CIPHER* CryptoNative_EvpAes256Ecb()
 {
     return EVP_aes_256_ecb();
+}
+
+const EVP_CIPHER* CryptoNative_EvpAes256Cfb128()
+{
+    return EVP_aes_256_cfb128();
 }
 
 const EVP_CIPHER* CryptoNative_EvpAes256Cbc()
